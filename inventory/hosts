@@ -1,0 +1,5 @@
+[local]
+localhost
+
+[nsxmgr]
+sg1-nsx002.sgroot.local

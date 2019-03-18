@@ -1,0 +1,5 @@
+# REST API Defaults
+http_content_type: "application/json"
+http_Accept: "application/json"
+http_validate_certs: no
+http_body_format: json
