@@ -1,0 +1,10 @@
+---
+# CMP NSX-T User Accounts
+nsxt_admin_username: "admin"
+nsxt_admin_password: "Admin!23Admin"
+nsxt_cli_password: "Admin!23Admin"
+
+## Compute Manager User Permissions.
+# This account is used to connect NSX-T to the compute manager
+nsxt_cm_username: svc_nsx
+nsxt_cm_password: VMwar3!!

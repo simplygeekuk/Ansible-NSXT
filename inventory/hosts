@@ -1,5 +1,58 @@
 [local]
+#localhost                   ansible_python_interpreter=~/venv/ansible/ansible_2.7.9/bin/python
 localhost
 
-[nsxmgr]
-sg1-nsx002.sgroot.local
+####################
+# Host Definitions #
+####################
+# Site A Hosts
+[site_a_mgmt_vcenter]
+sg1-vsa001                  ansible_host=sg1-vsa001.sgroot.local
+
+[site_a_cmp_vcenter]
+sg1-vsa002                  ansible_host=sg1-vsa002.sgroot.local
+
+[site_a_cmp_nsxt]
+sg1-nsx002                  ansible_host=sg1-nsx002.sgroot.local
+
+# Site B Hosts
+[site_b_mgmt_vcenter]
+sg1-vsa001                  ansible_host=sg1-vsa001.sgroot.local
+
+[site_b_cmp_vcenter]
+sg1-vsa003                  ansible_host=sg1-vsa003.sgroot.local
+
+[site_b_cmp_nsxt]
+sg1-nsx003                  ansible_host=sg1-nsx003.sgroot.local
+
+##########################
+# Host Group Definitions #
+##########################
+# Site A Groups
+[site_a_mgmt:children]
+site_a_mgmt_vcenter
+
+[site_a_cmp:children]
+site_a_cmp_vcenter
+site_a_cmp_nsxt
+
+[site_a:children]
+site_a_mgmt
+site_a_cmp
+
+# Site B Groups
+[site_b_mgmt:children]
+site_b_mgmt_vcenter
+
+[site_b_cmp:children]
+site_b_cmp_vcenter
+site_b_cmp_nsxt
+
+[site_b:children]
+site_b_mgmt
+site_b_cmp
+
+# All NSX Managers
+[nsxt_managers_controllers:children]
+site_a_cmp_nsxt
+site_b_cmp_nsxt

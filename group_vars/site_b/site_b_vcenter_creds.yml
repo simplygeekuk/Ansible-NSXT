@@ -1,0 +1,8 @@
+---
+## Management vCenter Admin Credentials
+mgmt_vcenter_admin_username: administrator@vsphere.local
+mgmt_vcenter_admin_password: VMwar3!!
+
+## CMP vCenter Admin Credentials
+cmp_vcenter_admin_username: administrator@vsphere.local
+cmp_vcenter_admin_password: VMwar3!!

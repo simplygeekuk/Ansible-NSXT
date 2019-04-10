@@ -1,0 +1,16 @@
+---
+# NSX-T OVF/OVA Variables
+nsxt_ovftool_path: "/usr/bin"
+nsxt_ova_path: "/mnt/iso/VMware/NSX/NSX-T/2.4"
+nsxt_ova_filename: "nsx-unified-appliance-2.4.0.0.0.12456291.ova"
+
+# NSX-T Default Deployment Variables
+nsxt_default_deployment_size: "small"
+nsxt_default_role: "nsx-manager nsx-controller"
+nsxt_default_origin_type: "vCenter"
+
+# NSX-T Misc Variables
+nsxt_ssh_enabled: True
+nsxt_validate_certs: False
+nsxt_status_check_delay: 50
+nsxt_default_mtu: 1600

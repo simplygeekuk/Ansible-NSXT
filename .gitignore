@@ -2,3 +2,5 @@
 *.swp
 vp
 .vscode/sftp.json
+group_vars/site_a_cmp_nsxt/site_a_cmp_nsxt_lic2.yml
+group_vars/site_b_cmp_nsxt/site_b_cmp_nsxt_lic2.yml

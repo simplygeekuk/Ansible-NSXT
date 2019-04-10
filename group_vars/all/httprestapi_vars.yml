@@ -1,4 +1,5 @@
-# REST API Defaults
+---
+# HTTP REST API Variables
 http_content_type: "application/json"
 http_Accept: "application/json"
 http_validate_certs: no

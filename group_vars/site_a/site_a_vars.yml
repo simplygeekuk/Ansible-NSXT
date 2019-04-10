@@ -1,0 +1,19 @@
+---
+# Site A Variables
+site_name: SiteA
+
+## NTP Servers
+ntp_server_default: pool.ntp.org
+ntp_server_1: 0.pool.ntp.org
+ntp_server_2: 1.pool.ntp.org
+ntp_server_3: 2.pool.ntp.org
+ntp_server_4: 3.pool.ntp.org
+
+# DNS Servers
+dns_server_1: 10.1.10.10
+dns_server_2: 10.1.10.11
+
+# Site A Management vCenter Details
+mgmt_vcenter_server: sg1-vsa001.sgroot.local
+mgmt_vcenter_datacenter: "SG1"
+mgmt_vcenter_cluster: "SG1-CLS-MGMT-01"
