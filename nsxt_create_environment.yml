@@ -2,7 +2,7 @@
 ## Deploys an NSX-T environment
 - hosts: nsxt_managers_controllers
   connection: local
-  become: yes
+  become: no
   gather_facts: False
   vars:
     nsxt_deployment_vcenter: "{{ mgmt_vcenter_server }}"
